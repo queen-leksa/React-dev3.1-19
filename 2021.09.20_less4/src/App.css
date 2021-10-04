@@ -1,0 +1,48 @@
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.analog {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nail {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #000;
+}
+.arrow {
+    position: absolute;
+    border: 1px solid;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.arrowH {
+    height: 90px;
+    width: 12px;
+    top: calc(50% - 84px);
+    transform-origin: 6px 84px;
+}
+.arrowM {
+    height: 110px;
+    width: 8px;
+    top: calc(50% - 106px);
+    transform-origin: 4px 106px;
+}
+.arrowS {
+    height: 140px;
+    width: 4px;
+    transform: rotate(0deg);
+    transform-origin: 2px 138px;
+    top: calc(50% - 138px);
+}

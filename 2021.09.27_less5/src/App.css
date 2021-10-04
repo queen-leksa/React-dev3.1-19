@@ -1,0 +1,42 @@
+.desk {
+    width: 840px;
+    margin: auto;
+}
+
+.card {
+    width: 120px;
+    height: 180px;
+    border: 1px solid;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    /*transform-style: preserve-3d;*/
+    transition: transform 500ms;
+    /*backface-visibility: hidden;*/
+}
+.card.active {
+    transform: rotateY(180deg);
+}
+.card>img {
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 500ms;
+}
+.card>:first-child {
+    transform: rotateY(180deg);
+}
+.card>:last-child {
+    transform: rotateY(0deg);
+}
+.card.active>:first-child {
+    transform: rotateY(0deg);
+}
+.card.active>:last-child {
+    transform: rotateY(180deg);
+}
