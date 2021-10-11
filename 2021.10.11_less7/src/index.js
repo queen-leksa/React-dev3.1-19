@@ -4,11 +4,18 @@ import './index.css';
 import Data from "./components/Data"
 import reportWebVitals from './reportWebVitals';
 
+
+
 ReactDOM.render(
     <div className="wrapper">
-        <Data name={"Max"}/>
-        <Data name={"Lisy"}/>
-        <Data name={"Vasya"}/>
+        <Data/>
+        <Data/>
+        <Data/>
+        <Data/>
+        <Data/>
+        <Data/>
+        <Data/>
+        <Data/>
     </div>,
   document.getElementById('root')
 );
